@@ -124,3 +124,47 @@
   }
 }
 
+/* join section */
+
+.Join {
+  width: 100%;
+  height: 500px;
+  background-image: url(Images/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Join h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 400px 100px;
+  grid-template-rows: 50px;
+}
+
+.form input[type="email"] {
+  padding-left: 15px;
+}
+
+.form button {
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width:576px) {
+
+  .form {
+  grid-template-columns: 200px 80px;
+}
+.Join h1 {
+  font-size: 2rem;
+}
+}
+
