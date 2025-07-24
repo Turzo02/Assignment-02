@@ -142,6 +142,7 @@
 .Join h1 {
   color: white;
   font-size: 3rem;
+  text-align: center;
 }
 
 .form {
@@ -226,8 +227,10 @@ footer a {
 .deal-3 {
   background-size: cover;
   border-radius: 16px;
-  text-align: center;
-  align-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 .deal-1 {
   grid-column: 1/1;
