@@ -81,7 +81,7 @@
 
 /* Plants Card Section */
 
-.plants-content  {
+.plants-content {
   margin-bottom: 50px;
   text-align: center;
 }
@@ -263,19 +263,59 @@ footer a {
 
 @media screen and (max-width: 576px) {
   .latest-deal {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 300px);
-  padding:0 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 300px);
+    padding: 0 20px;
+  }
+  .deal-2 {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    font-size: 1.2rem;
+  }
+  .deal-3 {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+}
 
+/* lover badge section */
+
+.badge {
+  display: flex;
+  align-items: center;
 }
-.deal-2 {
-  grid-column: 1/1;
-  grid-row: 2/3;
-  font-size: 1.2rem;
+.badge-img {
+  position: absolute;
+  width: 45%;
+  top: -20%;
+  right: -20%;
+  filter: drop-shadow(5px 5px 5px #0000004f);
 }
-.deal-3 {
-  grid-column: 1/1;
-  grid-row: 3/4;
+.badge-bg-img {
+  width: 100%;
+}
+.badge-left {
+  position: relative;
+  width: 50%;
+}
+.badge-right {
+  width: 50%;
+margin-left: 50px;
+}
+.list-info li {
+  margin: 30px 30px;
 }
 
+@media screen and (max-width: 576px) {
+  .badge {
+    display: flex;
+    flex-direction: column;
+  }
+  .badge-left,
+  .badge-right {
+    width: 90%;
+  }
+  .badge-img {
+    display: none;
+  }
 }
