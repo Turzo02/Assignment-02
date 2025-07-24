@@ -37,7 +37,7 @@
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
- margin-left: 20px;
+  margin-left: 20px;
 }
 
 .hero {
@@ -78,3 +78,49 @@
     width: 100%;
   }
 }
+
+/* Plants Card Section */
+
+.plants-content {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.plants-content p {
+  text-align: center;
+}
+
+.plants-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  font-family: "Inter", sans-serif;
+}
+.plants-card {
+  text-align: center;
+}
+
+.card-img img {
+  width: 100%;
+}
+.card-info {
+  margin: 15px 0;
+}
+.card-info h1 {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.card-btn {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(233, 90, 8);
+  border: none;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .plants-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+  }
+}
+
