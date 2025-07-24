@@ -290,7 +290,17 @@ footer a {
   top: -20%;
   right: -20%;
   filter: drop-shadow(5px 5px 5px #0000004f);
+  animation: spin 6s linear infinite;
 }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .badge-bg-img {
   width: 100%;
 }
@@ -300,7 +310,7 @@ footer a {
 }
 .badge-right {
   width: 50%;
-margin-left: 50px;
+  margin-left: 65px;
 }
 .list-info li {
   margin: 30px 30px;
